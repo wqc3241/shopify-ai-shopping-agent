@@ -1,0 +1,23 @@
+{% comment %}
+  AI Product Search Widget Snippet
+  Include this snippet in your theme to enable the AI search widget
+{% endcomment %}
+
+<div id="ai-product-search-widget-container"></div>
+
+<script>
+  // Load the widget script
+  (function() {
+    const script = document.createElement('script');
+    script.src = '{{ "ai-search-widget.js" | asset_url }}';
+    script.async = true;
+    document.head.appendChild(script);
+  })();
+</script>
+
+<style>
+  #ai-product-search-widget-container {
+    position: relative;
+  }
+</style>
+

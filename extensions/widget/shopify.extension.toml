@@ -1,0 +1,17 @@
+# Learn more about configuring your extension at https://shopify.dev/docs/apps/app-extensions/configuration
+
+api_version = "2025-10"
+name = "AI Product Search Widget"
+type = "ui_extension"
+handle = "ai-product-search-widget"
+
+[extension_points]
+targets = [
+  "purchase.checkout.block.render",
+  "purchase.checkout.cart-line-item.render-after",
+]
+
+[capabilities]
+block_progress = true
+network_access = true
+
