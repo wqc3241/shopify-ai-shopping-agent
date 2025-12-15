@@ -1,0 +1,35 @@
+﻿{
+  "name": "shopify-ai-shopping-agent",
+  "version": "1.0.0",
+  "description": "AI-powered shopping assistant using Shopify Catalog MCP API",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "shopify app dev",
+    "build": "shopify app build",
+    "deploy": "shopify app deploy",
+    "dev:server": "node --watch server/index.js",
+    "start": "node server/index.js"
+  },
+  "keywords": [
+    "shopify",
+    "app",
+    "ai",
+    "shopping",
+    "catalog"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@shopify/shopify-api": "^9.0.0",
+    "express": "^4.18.2",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "axios": "^1.6.2",
+    "cookie-parser": "^1.4.6",
+    "express-session": "^1.17.3"
+  },
+  "devDependencies": {
+    "@shopify/cli": "^3.48.0"
+  }
+}
